@@ -1,0 +1,104 @@
+footer {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  @media (max-width: 600px){
+    padding: 0;
+  }
+  @media (min-width: 768px){
+      width: 750px;
+  }
+  @media (min-width: 992px){
+      width: 970px;
+  }
+  @media (min-width: 1200px){
+      width: 1170px;
+  }
+  .footer {
+    background-color: $naraja;
+    width: 100%;
+    color: white;
+    overflow: auto;
+    @media (min-width: 600px) {
+      padding: 30px 20px;
+
+    }
+    &__logo {
+      @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      &--img {
+        width: 220px;
+        height: 35px;
+        margin-bottom: 40px;
+      }
+      p {
+        padding-left: 10px;
+        margin-bottom: 30px;
+      }
+      div {
+        width: 80%;
+        border-top: 1px solid white;
+        padding: 10px 0;
+        text-align: center;
+
+      }
+    }
+    &__info {
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+      padding-right: 0;
+      ul {
+        list-style: none;
+        padding-left: 30px;
+        li {
+          span {
+            text-transform: uppercase;
+          }
+          margin: 15px 0;
+        }
+      }
+    }
+    &__terms {
+      position: relative;
+      ul {
+        list-style: none;
+        line-height: 1.5;
+      }
+      .media {
+        display: inline-block;
+        margin-top: 80px;
+        li {
+          display: inline-block;
+          padding: 0 10px;
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+  .btn-subir {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    color: white;
+    top: 35%;
+    right: 5px;
+    padding-top: 5px;
+    align-items: center;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    background-color: $text-black;
+    cursor: pointer;
+  }
+}

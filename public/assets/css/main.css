@@ -71,6 +71,92 @@ nav.menu {
   .mundoNews .contenedor .newsCentro div {
     margin-bottom: 5px; }
 
+footer {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative; }
+  @media (max-width: 600px) {
+    footer {
+      padding: 0; } }
+  @media (min-width: 768px) {
+    footer {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    footer {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    footer {
+      width: 1170px; } }
+  footer .footer {
+    background-color: #F7B617;
+    width: 100%;
+    color: white;
+    overflow: auto; }
+    @media (min-width: 600px) {
+      footer .footer {
+        padding: 30px 20px; } }
+    @media (max-width: 600px) {
+      footer .footer__logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px; } }
+    footer .footer__logo--img {
+      width: 220px;
+      height: 35px;
+      margin-bottom: 40px; }
+    footer .footer__logo p {
+      padding-left: 10px;
+      margin-bottom: 30px; }
+    footer .footer__logo div {
+      width: 80%;
+      border-top: 1px solid white;
+      padding: 10px 0;
+      text-align: center; }
+    footer .footer__info {
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+      padding-right: 0; }
+      footer .footer__info ul {
+        list-style: none;
+        padding-left: 30px; }
+        footer .footer__info ul li {
+          margin: 15px 0; }
+          footer .footer__info ul li span {
+            text-transform: uppercase; }
+    footer .footer__terms {
+      position: relative; }
+      footer .footer__terms ul {
+        list-style: none;
+        line-height: 1.5; }
+      footer .footer__terms .media {
+        display: inline-block;
+        margin-top: 80px; }
+        footer .footer__terms .media li {
+          display: inline-block;
+          padding: 0 10px; }
+          footer .footer__terms .media li img {
+            width: 20px;
+            height: 20px; }
+  footer .btn-subir {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    color: white;
+    top: 35%;
+    right: 5px;
+    padding-top: 5px;
+    align-items: center;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    background-color: #2B2B2B;
+    cursor: pointer; }
+
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif; }
