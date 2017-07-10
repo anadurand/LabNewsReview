@@ -15,15 +15,14 @@ const EduNews = () => {
   const sub6 = $('<div class="col-md-6"></div>');
 
 
-  sub1.append(News(state.tecnologia[0]));
-  sub2.append(News(state.tecnologia[1]));
-  sub3.append(News(state.tecnologia[2]));
-  sub4.append(News(state.tecnologia[3]));
+  sub1.append(News(state.educacion[0]));
+  sub2.append(News(state.educacion[1]));
+  sub3.append(News(state.educacion[2]));
+  sub4.append(News(state.educacion[3]));
     
-  sub5.append(newsHorizontal(state.tecnologia[4]));
-  sub6.append(newsHorizontal(state.tecnologia[5]));
-
-  
+  sub5.append(newsHorizontal(state.educacion[4]));
+  sub6.append(newsHorizontal(state.educacion[5]));
+    
   col2.append(sub5);
   col2.append(sub6);
 
