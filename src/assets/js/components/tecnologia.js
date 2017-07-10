@@ -5,18 +5,18 @@ const TecnoNews = (number) => {
   const h3 = $('<h4 class="title">Tecnología</h4>');
   const linea = $('<hr class="linea" align="left">');
   const container1 = $('<div class=""></div>');
-  const col1 = $('<div class="col-md-6"></div>');
-  const col2 = $('<div class="col-md-6"></div>');
-  const sub1 = $('<div class="col-md-6"></div>');
-  const sub2 = $('<div class="col-md-6"></div>');
+  const col1 = $('<div class="col-md-6 pd-l-0"></div>');
+  const col2 = $('<div class="col-md-6 pd-0"></div>');
+  const sub1 = $('<div class="col-md-6 imagen"></div>');
+  const sub2 = $('<div class="col-md-6 imagen pd-r-0"></div>');
   const sub3 = $('<div class="col-md-12"></div>');
   const sub4 = $('<div class="col-md-12"></div>');
 
 
   sub1.append(News(state.tecnologia[1]));
   sub2.append(News(state.tecnologia[2]));
-  sub3.append(News(state.tecnologia[3]));
-  sub4.append(News(state.tecnologia[4]));
+  sub3.append(newsHorizontal(state.tecnologia[3]));
+  sub4.append(newsHorizontal(state.tecnologia[4]));
 
 
   col2.append(sub1);

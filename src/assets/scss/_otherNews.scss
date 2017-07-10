@@ -1,12 +1,52 @@
 .news {
   &__info {
     background-color: $text-black;
-    display: flex;
-    align-items: center;
+    padding: 10px 0px 10px 10px;
     &--title {
-      padding: 10px 20px 5px 20px;
       color: white;
       font-weight: bold;
+      padding-right: 7em;
     }
   }
+}
+
+.newsHorizontal{
+    height: 100px;
+    margin: 15px -15px 5px 0px;
+     .news {
+        &__Img {
+          padding: 0px!important;
+          height: 100px;
+            >img{
+                height: 100px;
+            }
+        }
+         &__info{     
+            padding: 30px 0px 23px 13px;
+         }
+      }
+}
+
+.imagen{
+    .news{
+        &__Img{
+            >img{
+         height: 130px!important;  
+            width: 100%;
+                }
+        }
+    }
+}
+
+.tecnoNews{
+    overflow: auto;
+    >div{
+        >div:nth-Child(1){
+            img{
+            height: 365px;
+                }
+    
+        }
+    }
+    
 }

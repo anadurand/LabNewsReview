@@ -91,10 +91,11 @@ gulp.task('nodemon', function (cb) {
 
 gulp.task('serve',['nodemon'], ()=> {
   browserSync.init(null,{
-    proxy: "http://localhost:3000",
-    // server: {
-    //   baseDir: config.dist
-    // }
+   port: 7000,
+       proxy: {
+           target: "localhost:3000",
+           ws: true
+       }  
   });
   gulp.watch(sources.sass, ['sass']);
   gulp.watch(sources.js, ['js']);

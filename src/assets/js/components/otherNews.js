@@ -23,3 +23,24 @@ const News = (info) => {
 //     container.append(News(array[i]));
 //   }
 // }
+
+
+const newsHorizontal = (info) => {
+  
+  const div = $('<div class="newsHorizontal"></div>');
+  const divImg = $('<div class="news__Img col-xs-5"></div>');
+  const img = $('<img src="" class="news__Img--img img-responsive">');
+    
+  const divInfo = $('<div class="news__info col-xs-7"></div>');
+  const title = $('<p class="news__info--title"></p>');
+  
+  divImg.append(img);
+  divInfo.append(title);
+  div.append(divImg);
+  div.append(divInfo);
+
+  $(img).attr("src","assets/img/news/" + info.img);
+  $(title).text(info.title);
+
+  return div;
+}

@@ -4,7 +4,7 @@ const render = (root) => {
   const wrapper = $('<div class="wrapper container"></div>');
   wrapper.append(Header());
   wrapper.append(NavBAr());
-    if(state.page ==null){
+    if(state.page == null){
       wrapper.append(RecentNews(3));
       wrapper.append(MundoNews());
       wrapper.append(TecnoNews());
@@ -34,8 +34,6 @@ const state = {
   opinion: [],
   carrousel: []
 };
-
-
 
 $( _=>{
   const root = $('.root');

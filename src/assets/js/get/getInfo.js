@@ -31,9 +31,7 @@ const GetInfo = () => {
                 state.carrousel.push(item);
 
           break;
-        default:
-
+          default:
       }
   });
-
 }
