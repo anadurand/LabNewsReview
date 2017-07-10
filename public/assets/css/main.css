@@ -22,14 +22,32 @@
 nav.menu {
   background-color: #F7B617;
   margin-bottom: 0; }
+  @media (max-width: 767px) {
+    nav.menu {
+      background-color: transparent; } }
+  nav.menu img.logo_mobile {
+    padding-left: 26px;
+    padding-top: 12px;
+    width: 220px; }
   nav.menu .lista {
     display: flex;
     width: 100%;
     min-height: 50px;
     align-items: center; }
+    @media (max-width: 767px) {
+      nav.menu .lista {
+        flex-direction: column;
+        min-height: inherit; } }
     nav.menu .lista li {
       color: white;
       flex: 1; }
+      @media (max-width: 767px) {
+        nav.menu .lista li {
+          margin: 5px 0;
+          color: black;
+          cursor: pointer; }
+          nav.menu .lista li:hover {
+            border-bottom: 1px solid #F7B617; } }
 
 .actualNews {
   margin-bottom: 50px; }
