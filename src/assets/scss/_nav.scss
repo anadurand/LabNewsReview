@@ -1,0 +1,15 @@
+nav.menu {
+  background-color: $naraja;
+  margin-bottom: 0;
+  .lista {
+    display: flex;
+    width: 100%;
+    min-height: 50px;
+    align-items: center;
+    li {
+      color: white;
+      flex: 1;
+    }
+
+  }
+}

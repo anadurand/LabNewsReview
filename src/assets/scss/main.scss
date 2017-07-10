@@ -1,0 +1,35 @@
+@import "utils";
+@import "header";
+@import "nav";
+@import "recentNews";
+@import "otherNews";
+@import "mundo";
+
+
+* {
+  box-sizing: border-box;
+  font-family: $font;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.pd-l-0 {
+  padding-left: 0;
+}
+.pd-r-0 {
+  padding-right: 0;
+}
+.pd-0 {
+  padding: 0;
+}
+.linea {
+  width: 40px;
+  border: 3px solid $naraja;
+  align: left;
+}
+.title {
+  font-weight: 900;
+}

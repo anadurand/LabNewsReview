@@ -1,0 +1,23 @@
+.mundoNews {
+  .contenedor {
+    margin-bottom: 30px;
+    .newsGrande {
+      .news {
+        &__Img {
+          min-height: 379px;
+          &--img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+      }
+    }
+    .newsCentro {
+      div {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+}

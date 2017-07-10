@@ -1,0 +1,33 @@
+.actualNews {
+  margin-bottom: 50px;
+  .firstNews {
+    min-height: 400px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    &__info {
+      padding: 10px 350px 15px 50px;
+      color: white;
+      &--title {
+        margin: 0;
+      }
+      &--brief {
+        padding-right: 320px
+      }
+    }
+  }
+  .act-news {
+    .news__Img {
+      height: 267px;
+      min-height: 267px;
+      img {
+        height: 100%;
+      }
+    }
+    .news__info {
+      height: 100px;
+      min-height: 100px
+    }
+  }
+
+}
