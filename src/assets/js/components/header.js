@@ -1,6 +1,6 @@
 'use strict';
 const Header = () => {
-  const parent = $('<header></header>');
+  const parent = $('<header class="container-fluid visible-lg-block"></header>');
   const header = $('<div class="header row"></div>');
   const divLeft = $('<div class="col-xs-6 menu"></div>');
   const menu = $('<ul class="nav navbar-nav menu__left"><li><img src="assets/img/menu.png" class=""></i><span>sections</span></li><li><img src="assets/img/search.png" class=""></i><span>search</span></li></ul>');
