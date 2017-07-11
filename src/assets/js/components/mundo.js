@@ -18,7 +18,7 @@ const MundoNews = () => {
   const col6 = $('<div class="col-md-3"></div>');
   const col7 = $('<div class="col-md-3 pd-r-0"></div>');
 
-  console.log(state.mundo);
+  // console.log(state.mundo);
   sub1.append(News(state.mundo[1]));
   sub2.append(News(state.mundo[2]));
   sub3.append(News(state.mundo[4]));

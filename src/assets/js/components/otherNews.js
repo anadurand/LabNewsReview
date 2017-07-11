@@ -18,8 +18,23 @@ const News = (info) => {
 
   return parent;
 }
-// const Insertar = (number, container, array)=> {
-//   for(var i= 1; i<=number; i++){
-//     container.append(News(array[i]));
-//   }
-// }
+
+
+const Carr = (info) => {
+
+  const parentCar = $('<div class="news item"></div>');
+  const divImgCar = $('<div class="news__Img"></div>');
+  const imgCar = $('<img src="" class="news__Img--img img-responsive">');
+  const divInfoCar = $('<div class="news__info"></div>');
+  const titleCar = $('<p class="news__info--title"></p>');
+
+  divImgCar.append(imgCar);
+  divInfoCar.append(titleCar);
+  parentCar.append(divImgCar);
+  parentCar.append(divInfoCar);
+
+  $(imgCar).attr("src","assets/img/news/" + info.img);
+  $(titleCar).text(info.title);
+
+  return parentCar;
+}

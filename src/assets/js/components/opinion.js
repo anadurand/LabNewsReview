@@ -10,7 +10,7 @@ const OpNews = () => {
   const col3 = $('<div class="col-md-3"></div>');
   const col4 = $('<div class="col-md-3"></div>');
 
-  console.log(state.opinion);
+  // console.log(state.opinion);
   col1.append(News(state.opinion[0]));
   col2.append(News(state.opinion[1]));
   col3.append(News(state.opinion[2]));

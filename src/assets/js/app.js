@@ -10,6 +10,7 @@ const render = (root) => {
       wrapper.append(TecnoNews());
       wrapper.append(EduNews());
       wrapper.append(OpNews());
+      wrapper.append(Carrousel());
 
     }else {
       wrapper.append(DetailNews(update));
@@ -44,6 +45,24 @@ $( _=>{
     state.noticias = result;
     GetInfo();
     render(root);
-  });
-
+     $('.owl-carousel').owlCarousel({
+      margin:10,
+      loop:true,      
+      responsive:{
+        0:{
+            items:2,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:4,
+            nav:true,
+            loop:false
+        }
+      }
+    });
+  });  
 });
