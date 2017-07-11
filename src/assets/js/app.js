@@ -46,23 +46,24 @@ $( _=>{
     GetInfo();
     render(root);
      $('.owl-carousel').owlCarousel({
-      margin:10,
-      loop:true,      
+      loop:true,
+      margin: 7,
+      dots: true,
+      nav:true,
+      navText: ['<div class="carrouselContainer__arrow owl-prev"><img src="assets/img/flecha1.png"></div>', '<div class="carrouselContainer__arrow owl-next"><img src="assets/img/flecha2.png"></div>'],
       responsive:{
         0:{
-            items:2,
-            nav:true
+            items:2
         },
         600:{
-            items:3,
-            nav:false
+            items:3
         },
         1000:{
-            items:4,
-            nav:true,
-            loop:false
+            items:4
         }
       }
+      // $('.owl-prev').append('<img src="assets/img/flecha1.png">');
+      // $('.owl-next').append('<img src="assets/img/flecha2.png">');
     });
   });  
 });

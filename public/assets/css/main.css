@@ -291,6 +291,18 @@ nav.menu {
     padding: 4px;
     background-color: #F7B617; }
 
+.owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next {
+  background: #fcb425;
+  display: inline-block;
+  position: absolute;
+  top: 25%; }
+
+.owl-carousel .owl-nav .owl-prev {
+  left: 1px; }
+
+.owl-carousel .owl-nav .owl-next {
+  right: 1px; }
+
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif; }
